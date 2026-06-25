@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Status overview – Center Mapping progress</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 20px;
+    }
 
+    h2 {
+        color: #1f5f4a;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+    }
+
+    th {
+        background-color: #1f5f4a;
+        color: white;
+        text-align: left;
+        padding: 12px;
+    }
+
+    td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* First row highlight (incomplete overall) */
+    .row-warning {
+        background-color: #fdf3cd;
+    }
+
+    /* Status badges */
+    .badge {
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .pending {
+        background-color: #f6e1a6;
+        color: #8a5a00;
+    }
+
+    .completed {
+        background-color: #cde7d8;
+        color: #1f5f4a;
+    }
+
+    .unknown {
+        background-color: #e0e0e0;
+        color: #555;
+    }
+
+    /* Additional text next to badges */
+    .status-text {
+        margin-left: 8px;
+        color: #333;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Status overview – Center Mapping progress</h2>
+
+<table>
+    <tr>
+        <th>Center</th>
+        <th>Status</th>
+    </tr>
+
+    <!-- First row (yellow - incomplete overall) -->
+    <tr class="row-warning">
+        <td><strong>ABC</strong></td>
+        <td>
+            <span class="badge pending">
+                Bulk Import of Mapping - Completed, Countries Import - Pending
+            </span>
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>AfricaRice</strong></td>
+        <td><span class="badge pending">Bulk Import Pending</span></td>
+    </tr>
+
+    <tr>
+        <td><strong>CIMMYT</strong></td>
+        <td>
+            <span class="badge pending">Bulk Import Pending</span>
+            <span class="status-text">– 25th</span>
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>CIP</strong></td>
+        <td>
+            <span class="badge pending">Bulk Import Pending</span>
+            <span class="status-text">– Test import completed</span>
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>ICARDA</strong></td>
+        <td><span class="badge completed">Completed</span></td>
+    </tr>
+
+    <tr>
+        <td><strong>ICRISAT</strong></td>
+        <td><span class="badge unknown">Status Unknown</span></td>
+    </tr>
+
+    <tr>
+        <td><strong>IFPRI</strong></td>
+        <td><span class="badge unknown">Status Unknown</span></td>
+    </tr>
+
+    <tr>
+        <td><strong>IITA</strong></td>
+        <td><span class="badge completed">Completed</span></td>
+    </tr>
+
+    <tr>
+        <td><strong>ILRI</strong></td>
+        <td><span class="badge completed">Completed</span></td>
+    </tr>
+
+    <tr>
+        <td><strong>IRRI</strong></td>
+        <td><span class="badge pending">Bulk Import Pending</span></td>
+    </tr>
+
+    <tr>
+        <td><strong>IWMI</strong></td>
+        <td><span class="badge completed">Completed</span></td>
+    </tr>
+
+    <tr>
+        <td><strong>WF</strong></td>
+        <td><span class="badge completed">Completed</span></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
